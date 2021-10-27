@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <script src="app.js"></script>
+</head>
+<body>
+    <p>Cars Array</p>
+    <ul>
+        <script>
+            for(let i = 0; i<cars.length; i++){
+                document.writeln(`<li>${cars[i]}</i>`);
+            }
+        </script>
+    </ul>
+    <p>Makes Array</p>
+    <ul>
+        <script>
+            makes.forEach(make => {
+                document.writeln(`<li>${make}</i>`);
+            });
+        </script>
+    </ul>
+    <p>Print my array of numbers</p>
+    <script>
+        if(myNumbers.length > 0){
+            document.writeln('<ul>');
+            myNumbers,forEach(n => {
+                document.writeln(`<li>${n}</li>`);
+            })
+            document.writeln('</ul>');
+            //Shift
+            document.writeln(`My array length before shift is: ${myNumbers.length}`);
+            myNumbers.shift(99);
+            document.writeln('<ul>');
+                myNumbers.forEach(n => {
+                    document.writeln(`<li>${n}</li>`);
+                });
+                document.writeln('</ul>');
+            document.writeln(`My array length after shift is: ${myNumbers.length}`);
+        }else{
+            document.writeln('<p>No numbers in the array');
+        }
+    </script>
+    <p>My Things</p>
+    <script>
+        let things = [1,3,4, 'Raghuvir', 'ITPA 2021'];
+        console.log(things);
+        document.writeln('<ul>');
+            things.forEach(thing =>{ document.writeln(`<li>${things}</li>`)});
+        document.writeln('</ul>');
+    </script>
+    <script>
+        myNumbers.sort()
+        document.writeln('<ul>');
+            myNumbers.forEach(n => {
+                document.writeln(`<li>${n}</li>`);
+            });
+        document.writeln('</ul>');
+    </script>
+</body>
+</html>
